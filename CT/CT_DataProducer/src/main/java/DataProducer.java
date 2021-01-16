@@ -100,7 +100,7 @@ public class DataProducer {
         int duration = (int) (Math.random()*3600);//Units are seconds
 
         //the final call information
-        String result = callerName+","+calleeName+","+resultTimeString+","+specificTime+","+duration+"\n" ;
+        String result = callerName+","+calleeName+","+resultTimeString+" "+specificTime+","+duration+"\n" ;
         return result;
     }
 

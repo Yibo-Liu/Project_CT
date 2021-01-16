@@ -48,6 +48,17 @@
         <!-- Logging End -->
     </dependencies>
 
+    <!-- 仅声明子项目中共有的依赖，如果子项目中需要此依赖，在子项目中需要声明 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.scala-lang</groupId>
+                <artifactId>scala-library</artifactId>
+                <version>${scala.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 
     <!-- 声明构建信息 -->
     <build>
