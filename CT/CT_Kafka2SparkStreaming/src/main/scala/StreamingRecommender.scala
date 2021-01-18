@@ -57,7 +57,7 @@ object StreamingRecommender {
           case (caller,callee,time,dur) =>
             println("get data from kafka --- ratingStreamNext ")
 
-        }.count()
+        }.count
     }
 
 //    ratingStream.foreachRDD{
