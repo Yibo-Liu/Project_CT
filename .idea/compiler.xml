@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CT_DataProducer" />
+        <module name="CT_Kafka2Hbase" />
         <module name="CT_Kafka2SparkStreaming" />
       </profile>
     </annotationProcessing>

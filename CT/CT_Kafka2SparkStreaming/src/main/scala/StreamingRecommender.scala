@@ -9,7 +9,11 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
   * Created by root on 2019/12/14
   *
   * 实时推荐引擎.
-  *
+  * bin/kafka-server-start.sh -daemon ./config/server.properties
+  * bin/kafka-topics.sh --create --zookeeper node01:2181 --replication-factor 1 --partitions 1 --topic calllog
+  * bin/kafka-console-consumer.sh --bootstrap-server node01:9092 --topic calllog
+  * java -cp CT_DataProducer-1.0-SNAPSHOT.jar DataProducer /usr/local/ct_logs/calllog.csv
+  * bin/flume-ng agent -c ./conf/ -f ./myagent/log-kafka.properties -n agent
   *
   */
 object StreamingRecommender {
