@@ -15,6 +15,7 @@
         <module>CT_DataProducer</module>
         <module>CT_Kafka2SparkStreaming</module>
         <module>CT_Kafka2Hbase</module>
+        <module>CT_KafkaStream</module>
     </modules>
 
     <dependencyManagement>

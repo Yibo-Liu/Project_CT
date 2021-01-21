@@ -9,6 +9,7 @@
         <module name="CT_DataProducer" />
         <module name="CT_Kafka2Hbase" />
         <module name="CT_Kafka2SparkStreaming" />
+        <module name="CT_KafkaStream" />
       </profile>
     </annotationProcessing>
   </component>
