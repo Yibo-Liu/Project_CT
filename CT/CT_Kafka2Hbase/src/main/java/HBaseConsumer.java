@@ -22,7 +22,7 @@ public class HBaseConsumer extends Consumer{
         //subscribe topics. But in this code, only one topic to get
         kafkaConsumer.subscribe(Arrays.asList(PropertiesUtil.getProperty("kafka.topics")));
 
-        //HBaseDAO hd = new HBaseDAO();
+        HBaseDAO hd = new HBaseDAO();
         // consume the data circularly
         while(true){
             //ConsumerRecords is a container of
@@ -37,7 +37,7 @@ public class HBaseConsumer extends Consumer{
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                //hd.put(oriValue);//
+                hd.put(oriValue);//
             }
         }
     }

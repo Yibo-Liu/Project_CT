@@ -54,7 +54,7 @@ public class HBaseUtil {
         NamespaceDescriptor nd = NamespaceDescriptor
                 .create(namespace)
                 .addConfiguration("CREATE_TIME", String.valueOf(System.currentTimeMillis()))
-                .addConfiguration("AUTHOR", "Lawson")
+                //.addConfiguration("AUTHOR", "Lawson")
                 .build();
 
         //Create a new namespace

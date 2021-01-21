@@ -60,17 +60,17 @@ public class HBaseDAO {
      */
     public void put(String ori) {
         try {
-            String[] splitOri = ori.split(" ");//split ori(gin Value) with space
+            String[] splitOri = ori.split(",");//split ori(gin Value) with space
             String caller = splitOri[0];
             String callee = splitOri[1];
             String buildTime = splitOri[2];
-            String spcificTime = splitOri[3];
-            String duration = splitOri[4];
+            //String spcificTime = splitOri[3];
+            String duration = splitOri[3];
 
             //如下这个方式将会导致一个异常的产生
             //java.text.ParseException: Unparseable date: "2018-09-1022:08:34"
             //buildTime+=spcificTime;
-            buildTime =buildTime+" "+spcificTime;
+            //buildTime =buildTime+" "+spcificTime;
 
             /*
             01.使用预分区的技术，避免某个分区的数据过大
